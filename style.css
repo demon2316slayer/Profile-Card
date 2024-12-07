@@ -1,0 +1,132 @@
+:root{
+    font-size: 16px;
+}
+
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(20,20,20,255);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    font-family: 'CustomFont',sans-serif;
+ 
+
+}
+/*The Social Card*/
+
+.proCard{
+    width: 50vw;
+    max-width: 25em;
+    border-radius: 1.2em;
+    background-color:rgba(31,31,31,255);
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.proCard img{
+    border-radius: 3.125em;
+    width: 25%;
+    height: auto;
+    padding: 0.5em;
+    object-fit: contain;
+ 
+}
+/*All the paras*/
+
+.p1{
+    color: #ffffff;
+    word-wrap: break-word;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.p2{
+    color: #9aae51;
+    word-wrap: break-word;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.p3{
+    color: #8f8f8f;
+    word-wrap: break-word;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/*container for box*/
+.cover{
+margin-top: 1em;
+margin-bottom: 1em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1.5em;
+}
+
+
+/*Design box items*/
+.box{
+    color: #f3f3f3;
+   display: block;
+ 
+   width: 80%;
+    
+   height: auto; 
+   font-size: 1.2rem;
+   line-height: 1.5;
+   cursor: pointer;
+   word-wrap: break-word;
+}
+
+
+.box1{
+    background-color:#333333 ;
+    padding: 0.4em;
+    border-radius: 0.5em;
+}
+
+/*Responsive sizes for smaller screen*/
+@media screen and (max-width: 23.5rem) {
+    :root {
+        font-size: 14px; /* Slightly reduce base font size */
+    }
+
+.proCard{
+    width: 95%;
+    
+}
+.proCard img{
+    padding: 1em;
+}
+  .p1{
+    font-size: 1.25rem;
+  }
+
+  .p2 .p3{
+    font-size: 0.7rem;
+  }
+  .box1{
+  font-size: 0.5rem;
+  }
+
+}
